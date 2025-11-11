@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata | Md. Khizar Hayat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0D47A1;
+      --secondary: #1976D2;
+      --text: #1a1a1a;
+      --muted: #555;
+      --bg: #f4f8ff;
+      --card: #fff;
+      --radius: 14px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 16px;
+    }
+
+    .container {
+      background: var(--card);
+      max-width: 920px;
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      overflow: hidden;
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(15px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .biodata-heading {
+      text-align: center;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 20px 0;
+      text-transform: uppercase;
+      border-bottom: 4px solid #dce9f8;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+
+    header {
+      background: linear-gradient(90deg, #ffffff, #f2f7ff);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 40px;
+      flex-wrap: wrap;
+    }
+
+    .profile-info {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .profile-info h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .profile-info p {
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .photo-box {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 1px solid var(--secondary);
+      box-shadow:  3px  3px 20px var(--secondary);
+      background: url('fahad.pic.jpg') center/cover no-repeat, #38446b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--secondary);
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+      overflow: hidden;
+    }
+
+    .photo-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(25,118,210,0.2);
+    }
+
+    .photo-box input {
+      display: none;
+    }
+
+    .section {
+      padding: 24px 40px;
+      border-bottom: 1px solid #e6eefc;
+    }
+
+    .section:last-child {
+      border-bottom: none;
+    }
+
+    .section h2 {
+      color: var(--primary);
+      font-size: 18px;
+      margin-bottom: 14px;
+      border-left: 4px solid var(--secondary);
+      padding-left: 10px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 20px;
+    }
+
+    .info-item {
+      background: #f8fbff;
+      border: 1px solid #e0ebfa;
+      border-radius: 10px;
+      padding: 12px 14px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .info-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(25,118,210,0.12);
+    }
+
+    .info-item strong {
+      color: var(--secondary);
+      display: block;
+      font-size: 13px;
+      margin-bottom: 5px;
+    }
+
+    .info-item span {
+      font-size: 14px;
+      font-weight: 500;
+      color: #111;
+    }
+
+    footer {
+      text-align: center;
+      padding: 14px;
+      font-size: 13px;
+      color: var(--muted);
+      background: #f7faff;
+      border-top: 1px solid #e0ebfa;
+    }
+
+    @media (max-width: 720px) {
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+      header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
+    }
+    .photo-box input {
+      display: none;
+      box-shadow: 50px 10px 80px rgba(66, 25, 25, 0.2); 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="biodata-heading">Biodata</div>
+
+    <header>
+      <div class="profile-info">
+        <h1>Md Khizar Hayat</h1>
+        <p>Software Developer | Sopra Steria</p>
+      </div>
+      <div class="photo-box" style="background-image: url('fahad.pic.jpg');">
+</div>
+
+    </header>
+
+    <section class="section">
+      <h2>Personal Details</h2>
+      <div class="info-grid">
+        <div class="info-item"><strong>Name</strong><span>Md. Khizar Hayat</span></div>
+        <div class="info-item"><strong>Gender</strong><span>Male</span></div>
+        <div class="info-item"><strong>Date of Birth</strong><span>09 August 2000</span></div>
+        <div class="info-item"><strong>Place of Birth</strong><span>Bihar</span></div>
+        <div class="info-item"><strong>Height</strong><span>5 ft 7 in (170 cm)</span></div>
+        <div class="info-item"><strong>Religious Status</strong><span>Hafiz-e-Qur’an</span></div>
+        <div class="info-item"><strong>Mother Tongue</strong><span>Hindi</span></div>
+        <div class="info-item"><strong>Caste</strong><span>Sheikh Siddique</span></div>
+        <div class="info-item"><strong>Complexion</strong><span>Fair</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Education & Professional Details</h2>
+      <div class="info-grid">
+        <div class="info-item"><strong>Highest Education</strong><span>Bachelor of Technology (B.Tech)</span></div>
+        <div class="info-item"><strong>College</strong><span>Netaji Subhash Engineering College</span></div>
+        <div class="info-item"><strong>Occupation</strong><span>Software Developer</span></div>
+        <div class="info-item"><strong>Organization</strong><span>Sopra Steria</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Family Details</h2>
+      <div class="info-grid">
+        <div class="info-item"><strong>Father</strong><span>Late Md. Zubair Alam — Businessman</span></div>
+        <div class="info-item"><strong>Mother</strong><span>Shagufta Yasmin — Housewife</span></div>
+        <div class="info-item"><strong>Siblings</strong><span>3 Sisters, 1 Brother</span></div>
+        <div class="info-item"><strong>Brother</strong><span>Md. Huzaifa Hayat — Currently in 2nd Year, B.Tech</span></div>
+        <div class="info-item"><strong>Sister 1</strong><span>Farah Deeba Nasri — Teacher, Married to Sarfaraz Alam (Businessman)</span></div>
+        <div class="info-item"><strong>Sister 2</strong><span>Tasneem Nasri — Sr. Auditor, Ministry of Defence (Govt. of India), Married to Mohsin Amin (Gazetted Group ‘B’ Officer, CAG)</span></div>
+        <div class="info-item"><strong>Sister 3</strong><span>Nida Nasri — Teacher</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Contact Details</h2>
+      <div class="info-grid">
+        <div class="info-item"><strong>Contact No</strong><span>+91 9308711194</span></div>
+        <div class="info-item"><strong>WhatsApp</strong><span>+91 6299433773</span></div>
+        <div class="info-item"><strong>Address</strong><span>Imadpur, Imam Road, Bihar Sharif, Nalanda, Bihar</span></div>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 | Designed by Md Huzaifa Hayat (Frontend Developer)
+    </footer>
+  </div>
+
+  <script>
+    const photoBox = document.getElementById('photoBox');
+    const photoInput = document.getElementById('photoInput');
+
+    photoBox.addEventListener('click', () => {
+      photoInput.click();
+    });
+
+    photoInput.addEventListener('change', (event) => {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          photoBox.style.backgroundImage = `url('${e.target.result}')`;
+          photoBox.textContent = '';
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+  </script>
+</body>
+</html>
